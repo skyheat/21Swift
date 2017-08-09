@@ -220,9 +220,17 @@ class ViewController: UIViewController {
             dealerVictory()
             
         }
+        else if dealerValue == value  {
+            draw()
+        }
         else    {
             winnerCompare()
         }
+    }
+    
+    func draw() {
+        print("Draw!")
+        WLlabel.text = "Draw!"
     }
     func winnerCompare()    {
         if value > dealerValue  {
